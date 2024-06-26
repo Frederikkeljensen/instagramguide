@@ -171,7 +171,6 @@ a {
     top: 0;
 }
 
-
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
     .header li {
