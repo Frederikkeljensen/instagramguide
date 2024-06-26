@@ -5,6 +5,7 @@
     --font-labelcolor: #1e1e1e;
     --header-color: #d3d6d7;
     --footer-color: #d3d6d7;
+    --background-color: rgb(195, 195, 195);
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -47,7 +48,6 @@ body {
     margin: 0;
     background-color: var(--background-color);
     width: 100%;
-    background-image: url(images/background.png);
 }
 
 a {

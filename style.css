@@ -5,6 +5,7 @@
     --font-labelcolor: #1e1e1e;
     --header-color: #d3d6d7;
     --footer-color: #d3d6d7;
+    --background-color: rgb(195, 195, 195);
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -32,22 +33,40 @@ h1 {
 h2 {
     font-family: monospace;
     color: var(--font-headercolor);
+    margin-left: var(--spaceXLarge);
+    margin-top: var(--spaceXLarge);
 }
 
 h3 {
     color: var(--font-labelcolor);
+    margin-left: var(--spaceXLarge);
+}
+
+h4 {
+    color: var(--font-labelcolor);
+    margin-left: var(--spaceXLarge);
+}
+
+h5 {
+    color: var(--font-labelcolor);
+    margin-left: var(--spaceXLarge);
+}
+
+h6 {
+    color: var(--font-labelcolor);
+    margin-left: var(--spaceXLarge);
 }
 
 p {
     color: var(--font-pcolor);
     line-height: 25px;
+    margin-left: var(--spaceXLarge);
 }
 
 body {
     margin: 0;
     background-color: var(--background-color);
     width: 100%;
-    background-image: url(images/background.png);
 }
 
 a {
