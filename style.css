@@ -94,12 +94,11 @@ a {
 
 .header .img-logo {
     height: auto;
-    width: auto;
-    padding: 10px 20px;
+    width: 130px;
+    padding: 5px;
     float: right;
     display: block;
     font-size: 2em;
-
 }
 
 /* header- hamburger-menu */
