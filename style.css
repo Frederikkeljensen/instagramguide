@@ -33,8 +33,6 @@ h1 {
 h2 {
     font-family: monospace;
     color: var(--font-headercolor);
-    margin-left: var(--spaceXLarge);
-    margin-top: var(--spaceXLarge);
 }
 
 h3 {
@@ -42,23 +40,8 @@ h3 {
     margin-left: var(--spaceXLarge);
 }
 
-h4 {
-    color: var(--font-labelcolor);
-    margin-left: var(--spaceXLarge);
-}
-
-h5 {
-    color: var(--font-labelcolor);
-    margin-left: var(--spaceXLarge);
-}
-
-h6 {
-    color: var(--font-labelcolor);
-    margin-left: var(--spaceXLarge);
-}
-
 p {
-    color: var(--font-pcolor);
+    color: var(--font-color);
     line-height: 25px;
     margin-left: var(--spaceXLarge);
 }
@@ -190,6 +173,117 @@ a {
     top: 0;
 }
 
+/*instagramTrends */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 135px;
+}
+
+.item {
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 10px;
+    /* Sikrer afstand mellem billede og tekst */
+}
+
+.item img {
+    width: 100%;
+    height: 210px;
+    /* Fast højde for alle billeder */
+    object-fit: cover;
+    /* Sikrer at billeder bevarer deres proportioner */
+}
+
+.item p {
+    padding: 10px;
+    margin: 0;
+    background-color: #DFDEEE;
+    border-radius: 50px;
+    font-size: var(--fontSizeMedium);
+    font-family: monospace;
+
+}
+
+/*instagramTrends - hidden section */
+.instagram-guide {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 kolonne */
+    gap: 30px;
+    /* Afstand mellem sektioner */
+    margin-left: var(--spaceXLarge);
+}
+
+.hidden-section {
+    background-color: #ded9d9;
+    font-size: var(--fontSizeMedium);
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    /* Begræns maksimal bredde på sektionerne */
+    margin: 0;
+    /* Ingen margin for at sikre venstre justering */
+    border: 1px solid #ccc;
+    /* Valgfri: Tilføj en grå kant for visuel adskillelse */
+}
+
+.header-number {
+    text-align: center;
+}
+
+.hidden-section img {
+    max-width: 100%;
+    /* Billederne fylder maksimalt containerens bredde */
+    height: auto;
+    /* Bevarer billedets proportioner */
+    padding-bottom: 20px;
+}
+
+#section1 img {
+    width: 100%;
+    /* Billeder i section1 fylder hele containerens bredde */
+    max-width: 300px;
+    /* Maksimal bredde for billederne */
+}
+
+#section3 img {
+    width: 100%;
+    /* Billeder i section3 fylder hele containerens bredde */
+    max-width: 600px;
+    /* Maksimal bredde for billederne */
+    height: auto;
+    /* Bevarer proportioner */
+}
+
+.hidden-section p {
+    margin: 0;
+    /* Fjern standard margin fra p- og ul-elementer */
+    padding: 10px 0;
+    /* Polstring omkring teksten */
+}
+
+.hidden-section ul {
+    padding-left: 20px;
+    /* Indryk listepunkterne */
+    list-style: none;
+}
+
+.reels-tip {
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
