@@ -37,7 +37,6 @@ h2 {
 
 h3 {
     color: var(--font-labelcolor);
-    margin-left: var(--spaceXLarge);
 }
 
 p {
@@ -204,13 +203,14 @@ body {
     /* Sikrer at billeder bevarer deres proportioner */
 }
 
-.item p {
+.item h2 {
     padding: 10px;
     margin: 0;
     background-color: #DFDEEE;
     border-radius: 50px;
     font-size: var(--fontSizeMedium);
     font-family: monospace;
+    text-align: center;
 
 }
 
@@ -238,8 +238,9 @@ body {
     /* Valgfri: Tilføj en grå kant for visuel adskillelse */
 }
 
-.header-number {
-    text-align: center;
+.hidden-section li {
+    padding-bottom: 15px;
+    list-style: none;
 }
 
 .hidden-section img {
