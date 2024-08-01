@@ -276,6 +276,14 @@ body {
     /* Polstring omkring teksten */
 }
 
+.instagram-guide__hashtags-list {
+    text-align: center;
+}
+
+.instagram-guide__hashtag {
+    text-align: center;
+}
+
 .instagram-guide__section ul {
     padding-left: 20px;
     /* Indryk listepunkterne */
