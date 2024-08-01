@@ -33,6 +33,7 @@ h1 {
 h2 {
     font-family: monospace;
     color: var(--font-headercolor);
+    margin-left: var(--spaceXLarge);
 }
 
 h3 {
@@ -172,12 +173,6 @@ a {
 }
 
 /*instagramTrends side */
-body {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .instagram-guide__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -296,7 +291,17 @@ body {
 }
 
 /* Design Tools underside */
+.tools {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
 
+.tools__item {
+    text-align: center;
+}
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
