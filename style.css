@@ -171,14 +171,14 @@ a {
     top: 0;
 }
 
-/*instagramTrends */
+/*instagramTrends side */
 body {
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.container {
+.instagram-guide__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -187,7 +187,7 @@ body {
     margin-bottom: 135px;
 }
 
-.item {
+.instagram-guide__item {
     border-radius: 15px;
     text-align: center;
     overflow: hidden;
@@ -195,7 +195,7 @@ body {
     /* Sikrer afstand mellem billede og tekst */
 }
 
-.item img {
+.instagram-guide__item img {
     width: 100%;
     height: 210px;
     /* Fast højde for alle billeder */
@@ -203,7 +203,7 @@ body {
     /* Sikrer at billeder bevarer deres proportioner */
 }
 
-.item h2 {
+.instagram-guide__title {
     padding: 10px;
     margin: 0;
     background-color: #DFDEEE;
@@ -211,10 +211,9 @@ body {
     font-size: var(--fontSizeMedium);
     font-family: monospace;
     text-align: center;
-
 }
 
-/*instagramTrends - hidden section */
+/* Instagram Guide - sektioner */
 .instagram-guide {
     display: grid;
     grid-template-columns: 1fr;
@@ -224,7 +223,7 @@ body {
     margin-left: var(--spaceXLarge);
 }
 
-.hidden-section {
+.instagram-guide__section {
     background-color: #ded9d9;
     font-size: var(--fontSizeMedium);
     font-family: monospace;
@@ -238,52 +237,58 @@ body {
     /* Valgfri: Tilføj en grå kant for visuel adskillelse */
 }
 
-.hidden-section li {
+.instagram-guide__section li {
     padding-bottom: 15px;
     list-style: none;
 }
 
-.hidden-section img {
-    max-width: 100%;
-    /* Billederne fylder maksimalt containerens bredde */
+.instagram-guide__section img {
+    width: 100%;
+    /* Billederne fylder nu hele containerens bredde */
+    max-width: 350px;
+    /* Reducerer maksimal bredde til 80% af containerens bredde */
     height: auto;
     /* Bevarer billedets proportioner */
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    /* Afstand til elementerne nedenfor */
 }
 
-#section1 img {
+#section1 .instagram-guide__section img {
+    max-width: 90px;
+    /* Maksimal bredde for billeder i section1 */
+}
+
+#section3 .instagram-guide__section img {
+    height: 900%;
+    /* Maksimal bredde for billeder i section3 */
+}
+
+.instagram-guide__section-image {
     width: 100%;
-    /* Billeder i section1 fylder hele containerens bredde */
-    max-width: 300px;
-    /* Maksimal bredde for billederne */
+    max-width: none;
+    /* Ingen begrænsning på størrelsen */
 }
 
-#section3 img {
-    width: 100%;
-    /* Billeder i section3 fylder hele containerens bredde */
-    max-width: 600px;
-    /* Maksimal bredde for billederne */
-    height: auto;
-    /* Bevarer proportioner */
-}
-
-.hidden-section p {
+.instagram-guide__section p {
     margin: 0;
     /* Fjern standard margin fra p- og ul-elementer */
     padding: 10px 0;
     /* Polstring omkring teksten */
 }
 
-.hidden-section ul {
+.instagram-guide__section ul {
     padding-left: 20px;
     /* Indryk listepunkterne */
     list-style: none;
 }
 
-.reels-tip {
+.instagram-guide__reels-tip {
     padding-bottom: 5px;
     padding-top: 15px;
 }
+
+/* Design Tools underside */
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
