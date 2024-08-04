@@ -293,14 +293,43 @@ a {
 /* Design Tools underside */
 .tools {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-items: center;
+    /* Centrer elementer horisontalt */
+    align-items: center;
+    /* Centrer elementer vertikalt */
     padding-top: 20px;
 }
 
-.tools__item {
+.tools__image {
+    display: block;
+    margin: 0 auto;
+    /* Centrer billedet horisontalt */
     text-align: center;
+    max-width: 150px;
+    /* Valgfrit: sæt en maksimal bredde */
+    padding-left: 10%;
+}
+
+.tools__name {
+    text-align: center;
+    /* Centrer teksten */
+    margin-top: 10px;
+}
+
+.tools__description {
+    margin-top: 10px;
+    /* Plads mellem navnet og beskrivelsen */
+    text-align: center;
+    /* Center teksten */
+    max-width: 300px;
+    /* Valgfri: begræns bredden af beskrivelsen for bedre læsbarhed */
+}
+
+.tools__highlight {
+    font-weight: bold;
+    /* Make the text bold */
 }
 
 /* mobil-størrelse, med header-menu */
