@@ -172,7 +172,7 @@ a {
     top: 0;
 }
 
-/*instagramTrends side */
+/* instagramTrends underside */
 .instagram-guide__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -331,6 +331,9 @@ a {
     font-weight: bold;
     /* Make the text bold */
 }
+
+/* Hashtag Usage underside */
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
