@@ -333,7 +333,14 @@ a {
 }
 
 /* Hashtag Usage underside */
+.hashtag-section {
+    padding: 20px;
+}
 
+.hashtag-section__title {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
